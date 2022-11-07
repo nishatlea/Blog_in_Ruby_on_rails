@@ -1,4 +1,18 @@
+
+<a href="/articles/"> Main Page </a>
+
 <h1><%= @article.title %></h1>
 
 <p><%= @article.body %></p>
-<a href="/articles/"> Main Page </a>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+</ul>
+
+<ul>
+
+  <li><%= link_to "Destroy", article_path(@article), method: :delete, data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %></li>
+</ul>

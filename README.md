@@ -6,3 +6,6 @@ References:
 config/routes.rb
 link_to helper
 Form builder
+validation
+edit-update 
+partial rendering

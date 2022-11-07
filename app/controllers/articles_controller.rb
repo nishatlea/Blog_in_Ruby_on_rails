@@ -37,7 +37,12 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
 
+    render :destroy, status: :see_other
+  end
 
 
 
