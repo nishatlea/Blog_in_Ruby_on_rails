@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "/articles/:id", to: "articles#show"
   get "/articles_new", to:"articles#new"
   resources :articles
+  resources :comments
+
 end
